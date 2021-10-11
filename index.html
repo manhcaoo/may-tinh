@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Caculator</title>
+  </head>
+  <body>
+    <h1>Caculator</h1>
+    <br /><br />
+    <label for="number-01">
+      <input class="first-input" value="" type="text" />
+    </label>
+    <label for="number-02">
+      <input class="second-input" value="" type="text" />
+    </label>
+
+    <button onclick="addtion()">Addition(+)</button>
+    <button onclick="subtraction()">Subtratcion(-)</button>
+    <button onclick="multiplication()">Multiplication(x)</button>
+    <button onclick="division()">Division(/)</button>
+
+    <script>
+      function addtion() {
+        let a = +document.querySelector(".first-input").value;
+        let b = +document.querySelector(".second-input").value;
+        alert(a + b);
+      }
+      function subtraction() {
+        let a = document.querySelector(".first-input").value;
+        let b = document.querySelector(".second-input").value;
+        alert(a - b);
+      }
+      function multiplication() {
+        let a = document.querySelector(".first-input").value;
+        let b = document.querySelector(".second-input").value;
+        alert(a * b);
+      }
+      function division() {
+        let a = document.querySelector(".first-input").value;
+        let b = document.querySelector(".second-input").value;
+        alert(a / b);
+      }
+    </script>
+  </body>
+</html>
